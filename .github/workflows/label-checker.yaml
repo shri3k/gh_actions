@@ -6,7 +6,7 @@ on:
 
 jobs:
   mockoon-test:
-    if : ${{ github.event.label.name == "mock-test"}}
+    if: ${{ github.event.label.name == "mock-test"}}
     runs-on: ubuntu-latest
 
     steps:
@@ -15,7 +15,6 @@ jobs:
         run: echo "Hello World from mockoon"
 
   normal-test:
-    if : ${{ github.event.label.name != "mock-test"}}
     runs-on: ubuntu-latest
 
     steps:
