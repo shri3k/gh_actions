@@ -1,11 +1,6 @@
 name: Run Tests
 
-on:
-  push:
-    branches:
-      - master
-  pull_request:
-    types: [ labeled ]
+on: [push]
 
 jobs:
   mockoon-test:
