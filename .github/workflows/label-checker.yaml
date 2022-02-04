@@ -29,4 +29,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Run test
-        run: echo "Hello World"
+        run: echo "Hello World from deploy"
