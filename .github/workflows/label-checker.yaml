@@ -25,6 +25,8 @@ jobs:
   deploy-test:
     needs: normal-test
     runs-on: ubuntu-latest
+    environment:
+      name: hrd
 
     steps:
       - uses: actions/checkout@v2
