@@ -23,11 +23,10 @@ jobs:
       - name: Run test
         run: echo "Hello World"
   deploy-test:
-    needs: normal-test
-    runs-on: ubuntu-latest
     environment:
       name: hrd
-
+    needs: normal-test
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Run test
