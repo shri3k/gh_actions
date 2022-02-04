@@ -22,3 +22,11 @@ jobs:
       - uses: actions/checkout@v2
       - name: Run test
         run: echo "Hello World"
+  deploy-test:
+    needs: normal-test
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run test
+        run: echo "Hello World"
